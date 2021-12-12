@@ -1,7 +1,10 @@
 // Для добавления функционала используем классы с префиксом js, стилизовать по этим классам нельзя
 
 $(document).ready(function(){
-
+	$('.header__menu-icon').on('click', function () {
+		console.log('test');
+		$('.header__menu-wrap').toggleClass('active');
+	});
 	// $('input[type=tel]')
 	// 	.inputmask("8 (999) 999 99 99");
 

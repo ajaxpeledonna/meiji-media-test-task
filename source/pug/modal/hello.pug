@@ -2,11 +2,17 @@
 	.modal-dialog(role='document')
 		.modal-content
 			.modal-header
-				h5#exampleModalLabel.modal-title Gulp is watching you!
 				button.close(type='button' data-dismiss='modal' aria-label='Close')
-					span(aria-hidden='true') &times;
+					span(aria-hidden='true') 
 			.modal-body
-				| 'Hello world' from main.js
-			.modal-footer
-				button.btn.btn-secondary(type='button' data-dismiss='modal') Oh...
-				button.btn.btn-primary(type='button') No way!
+				h5#exampleModalLabel.modal-title ПРЕИМУЩЕСТВА G&#8209;SYNC
+				form(action='/my-handling-form-page' method='post')
+					div
+						input#name(type='text' name='user_name' placeholder="Имя")
+					div
+						input#mail(type='email' name='user_mail' placeholder="Mail")
+					.button
+						button.btn.btn-secondary(type='submit' data-dismiss='modal') Купить
+			//- .modal-footer
+			//- 	button.btn.btn-secondary(type='button' data-dismiss='modal') Oh...
+				//- button.btn.btn-primary(type='button') No way!

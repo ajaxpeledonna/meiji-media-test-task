@@ -5,4 +5,13 @@
 
 .heading-h1 {
 	@extend .heading;
+	font-family: $headings-font-family;
+	font-weight: 700;
+	color: $white;
+	font-size: 26px;
+	line-height: 138%;
+	text-align: center;
+	letter-spacing: 0.25px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
 }

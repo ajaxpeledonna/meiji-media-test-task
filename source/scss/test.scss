@@ -1,0 +1,216 @@
+.page-wrapper{
+    background: $body-color;
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+.page-class{
+    background: url("../img/bg.jpg");
+    background-repeat:no-repeat;
+    background-position: top center;
+    padding-bottom: 62px;
+    background-size: cover;
+    @media screen  and (min-width: 992px){
+        padding-bottom: 125px;
+        background-position: top center;
+        background-size: contain;
+    }
+    
+}
+
+.profit {
+    &__title {
+        padding-top: 60px;
+
+    }
+    &__text {
+        font-family: $font-family-secondary;
+        font-size: 16px;
+        font-weight: 400;
+        color: $white;
+        text-align: center;
+        line-height: 28px;
+        margin-top: 20px;
+        letter-spacing: 0.3px;
+        max-width: 730px;
+        margin: 0 auto 50px;
+    }
+    &__items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen  and (min-width: 480px){
+            align-items: flex-start;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        @media screen  and (min-width: 992px){
+            margin-bottom: 50px;
+        }
+    }
+    &__item{
+        margin-bottom: 50px;
+        max-width: 300px;
+        @media screen  and (min-width: 480px){
+            max-width: none;
+            flex: 0 0 45%;
+        }
+        @media screen  and (min-width: 992px){
+            flex: 0 0 23%;
+            margin-bottom: 0px;
+        }
+    }
+    &__item--icon{
+        min-height: 90px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: $transition-base;
+        margin-bottom: 29px;
+        &:hover{
+            transition: $transition-base;
+        }
+        &--1{
+            background-image: url(../img/it-1.svg);
+            &:hover{
+                background-image: url(../img/it-1-h.svg);
+            }
+        }
+        &--2{
+            background-image: url(../img/it-2.svg);
+            &:hover{
+                background-image: url(../img/it-2-h.svg);
+            }
+        }
+        &--3{
+            background-image: url(../img/it-3.svg);
+            &:hover{
+                background-image: url(../img/it-3-h.svg);
+            }
+        }
+        &--4{
+            background-image: url(../img/it-4.svg);
+            &:hover{
+                background-image: url(../img/it-4-h.svg);
+            }
+        }
+    }
+    &__item-title{
+        font-family: $headings-font-family;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 36px;
+        letter-spacing: 0.25px;
+        color: #77B900;
+        margin-bottom: 12px;
+        text-align: center;
+        span{
+            color: #ffffff;
+            font-weight: 400;
+        }
+        @media screen  and (min-width: 768px){
+            text-align: left;
+        }
+    }
+    &__item-text{
+        font-family: $font-family-secondary;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.3px;
+        color: #E1E1E1;
+        margin-bottom: 0;
+    }
+}
+
+#helloModal{
+     background: rgba(0, 0, 0, 0.8);
+    .modal-dialog{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 90%;
+        margin: 0;
+        @media screen  and (min-width: 768px){
+            max-width: 540px;
+            max-height: 410px;
+        }
+    }
+    .modal-content{
+        background: $black;
+        color: $white;
+        border: 2px solid #77B900;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 20px rgba(119, 185, 0, 0.5);
+        max-height: 410px;
+    }
+    .close{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        text-transform: uppercase;
+        background: transparent;
+        font-size: 35px;
+        line-height: 1;
+        color: $white;
+        span{
+            display: block;
+            width: 20px;
+            height: 20px;
+            transition: $transition-base;
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 2L2 18' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M2 2L18 18' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        &:hover{
+            span{
+                transition: $transition-base;
+                background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 2L2 18' stroke='%2377B900' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M2 2L18 18' stroke='%2377B900' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+            }
+        }
+    }
+    .modal-header{
+        border: none;
+    }
+    .modal-body{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .modal-title{
+        @extend .heading-h1;
+        padding: 9px 15px 0;
+        margin-bottom: 17px;
+    }
+    input{
+        width: 100%;
+        height: 56px;
+        margin-bottom: 20px;
+        padding: 14px 20px;
+        font-family: $font-family-secondary;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.3px;
+        color: $black;
+        &:focus{
+            &::placeholder {
+                color: transparent;
+            }
+            &::-webkit-input-placeholder { 
+                color:transparent; 
+            }
+            &:-moz-placeholder { color:transparent; }
+            &::-moz-placeholder { color:transparent; }
+            &:-ms-input-placeholder { color:transparent; }
+        }
+
+    }
+}
+footer{
+    display: none;
+}

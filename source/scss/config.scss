@@ -45,13 +45,13 @@ $grid-row-columns:                         6;
 
 $container-max-widths: (
 	xs: 1140px,
-) !default;
+) !default; 
 
 //Typography
 $font-family-base:                         'Montserrat',Arial, sans-serif;
-$font-family-secondary:                    $font-family-base;
-$headings-font-family:                     $font-family-secondary;
-$btn-font-family:                          $font-family-secondary;
+$font-family-secondary:                    'Roboto', sans-serif;
+$headings-font-family:                     'Play', sans-serif;;
+$btn-font-family:                          $headings-font-family;
 $headings-font-weight:                     700;
 $font-size-base:                           1rem;
 $font-size-sm:                             1rem;

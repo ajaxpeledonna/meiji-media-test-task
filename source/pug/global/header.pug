@@ -1,2 +1,22 @@
 header.header
-	.container Header
+	.container 
+		.header__wrap 
+			a.header__logo-link(href="#")
+				img.header__logo-img(src="/img/logo.svg", alt="logo")
+			.header__menu-wrap
+				nav.header__menu
+					ul.header__menu-list 
+						li.header__menu-item 
+							a.header__menu-link Продукты
+						li.header__menu-item 
+							a.header__menu-link Технологии
+						li.header__menu-item 
+							a.header__menu-link Experience
+				ul.header__menu-socials 
+					li.header__soc-icon 
+						a.header__soc-link.header__soc-link--inst 
+					li.header__soc-icon
+						a.header__soc-link.header__soc-link--twitter 
+			.header__menu-icon
+				img(src="/img/burger.svg", alt="logo")
+			
